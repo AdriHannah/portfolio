@@ -1,0 +1,60 @@
+html,
+body {
+    margin: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-size: 0.95rem;
+}
+
+/* CSS Variables */
+
+:root {
+    --primary:#fef2ef;
+    /*change color*/
+    --primary-color2: #854fee;
+    /*change color*/
+    --title-color: #f38970;
+    /*change color*/
+    --text-color: #212121;
+    /*change color*/
+    --border-color: #201f1f17;
+    /*change color*/
+    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+
+    /* Font Family Variables */
+    --roboto: 'Roboto', cursive;
+    --bad_script: 'Bad Script', cursive;
+    --georgia: 'Georgia';
+}
+
+/*
+#f38970
+#99d4c1
+#f3be5e
+#ed84a5
+#9fd6da
+ 
+
+#F3E0DC;
+#D4A59A;
+#BC4639;
+#5C2018;
+#4285F4;
+
+
+#FFFFFF;
+#FFCCBC;
+#D3E3FC;
+#77A6F7;
+#00887A; 
+
+#C6FAD2;
+#DD9BCF;
+#F6FFEE;
+#F48882;
+#FAD2CC;  
+
+*/

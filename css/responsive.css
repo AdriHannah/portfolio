@@ -1,0 +1,100 @@
+/* if the viewport is equal to 340px or less than that */
+@media only screen and (max-width: 340px) {
+
+    .header .main .navbar,
+    .header .main .navbar .navbar-brand {
+        padding: 2%;
+        margin: 0%;
+    }
+
+  
+    .site-main>.services-area .services {
+        width: 13rem;
+    }
+
+} 
+ 
+@media only screen and (max-width: 792px) {
+    /* .site-main .about .about-title h2>span {
+        font-size: 28px;
+        letter-spacing: 10px;
+    } */
+  
+    /* .site-main .project-area .button-group button {
+        font: normal 500 18px/40px var(--roboto);
+    } */
+
+    .site-main .about .about-title p {
+        padding: 0%;
+    } 
+}
+
+.navbar .navbar-toggler {
+    z-index: 1000
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-collapse {
+        background: rgba(0, 0, 0, .9);
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: opacity 0.35s ease;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center !important;
+        overflow-y: scroll;
+        overflow-x: hidden; 
+    }
+
+    .navbar .navbar-collapse.collapse {
+        display: flex;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .navbar .navbar-collapse.collapsing[style*="height"] {
+        opacity: 1;
+        height: 100vh !important;
+    }
+
+    .navbar .navbar-collapse.collapsing {
+        opacity: 0;
+        height: 100vh;
+    }
+
+    .navbar .navbar-collapse.collapse.show {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .navbar .navbar-collapse .navbar-nav {
+        margin-right: initial !important;
+        margin-top: auto;
+        margin-bottom: auto; 
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        margin-left: initial !important;
+    }
+}
+
+ 
+/* if the viewport is equal to 1910px or less than that */
+ @media only screen and (max-width: 1910px) {
+    .header .main .navbar {
+        padding: 1rem;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+
+}  
