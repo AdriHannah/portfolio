@@ -66,11 +66,18 @@
     color: #f38970 !important;
 }
 
-/* end nav */ 
- 
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+}
+
+/* end nav */
+
 
 /*start banner*/
-main{
+main {
     margin-bottom: 150px;
     background: white;
 }
@@ -96,8 +103,6 @@ main{
     transform: rotate(-10deg);
     text-align: justify;
 }
-
-
 
 /*end banner*/
 
@@ -169,8 +174,12 @@ main{
 
 /* Start Project Area */
 
+ 
+
 .site-main .project-area {
-    padding: 2rem;
+    padding: 2rem 0 3rem 0;
+    border: thin solid black;
+
 }
 
 .site-main .project-area .title h2>span {
@@ -180,65 +189,60 @@ main{
     color: #f1b037;
 }
 
-.site-main .project-area .btn-group{
+.site-main .project-area .btn-group {
     padding: 3px;
+
 }
 
-.site-main .project-area  button {
+.site-main .project-area button {
     font: normal 500 18px/30px var(--roboto);
     padding: 0.3rem 2rem;
     border: none;
     border-radius: 3px;
     background: #7ec9b1;
-    color: black;
+    color: rgb(243, 241, 241);
     width: 100%;
     margin: 2px 0;
 }
 
-.site-main .project-area button:hover{
+.site-main .project-area button:hover {
     background: #f1b037;
     transition: 1s;
 }
 
-.site-main .project-area .grid .element-item{
-    border-radius: 3px;
-    background: #f38970;
-    padding: 0 0 10px 0;
-}
 
 .site-main .project-area .grid .element-item {
     border-radius: 3px;
     background: #f38970;
     padding: 0 0 10px 0;
+
 }
 
-.first {
-    background: #f38970; 
-    } 
 
-
-.site-main .project-area .grid .element-item .project-links{
+.site-main .project-area .grid .element-item .project-links {
     text-align: center;
+
 }
 
-.site-main .project-area .grid .element-item .project-links a{
+.site-main .project-area .grid .element-item .project-links a {
     border-radius: 0.2rem;
     background: #99d4c1;
     color: black;
     padding: 0.5rem 1rem;
 }
 
-.site-main .project-area .grid .element-item .project-links a:hover{
+.site-main .project-area .grid .element-item .project-links a:hover {
     background: #9fd6da;
     transition: 1s;
 }
 
+
 .site-main .project-area .grid .our-project>.title h4 {
-    font: normal 700 20px/12px var(--roboto);
-    
+    font: normal 500 20px/25px var(--roboto);
+    border: thin solid white;
 }
 
-.site-main .project-area .grid .our-project .img video{
+.site-main .project-area .grid .our-project .img video {
     width: 100%;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
@@ -253,7 +257,7 @@ main{
 
 
 /* Start Contact Area */
-.contact-area{
+.contact-area {
     padding: 2rem;
     background: #9fd6da;
 }
@@ -271,7 +275,7 @@ a:hover {
     text-decoration: none;
 }
 
-footer{
+footer {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -280,7 +284,7 @@ footer{
     z-index: -1;
 }
 
-footer.footer-area{
+footer.footer-area {
     padding: 2rem;
 }
 
