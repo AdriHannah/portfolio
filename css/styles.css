@@ -1,23 +1,26 @@
 @import url(partials/_variables.css);
 @import url(partials/_global.css);
 
+
 /* start navigation */
 .header .main .navbar .navbar-brand {
     padding: 0 2rem 0 5rem;
     max-width: 135px;
-    font: italic bold 32px/2px Georgia;
-    color: var(--title-color);
-    letter-spacing: -3px;
+    font: italic 600 30px/10px georgia;
+    color: #f2f9f7;
+    letter-spacing: -2px;
+    position: relative;
+    right: 15px;
 }
 
 .header .main .navbar .navbar-brand .i {
-    color: #1a3549;
+    color: #C38D9E;
 }
 
 .header .main .navbar .navbar-brand .i::before {
     content: "ı";
     position: absolute;
-    color: var(--title-color);
+    color: #f2f9f7;
 }
 
 .navbar-toggler {
@@ -31,14 +34,14 @@
     width: 90%;
     float: left;
     height: 1px;
-    background-color: var(--title-color);
+    background: #f2f9f7;
     margin-bottom: 5px;
 }
 
 
 .header .main .navbar {
     padding: 1rem 20rem;
-    background: #D3E3FC;
+    background: var(--gradient-color);
 }
 
 .header .main .nav-item .nav-link {
@@ -66,61 +69,163 @@
     color: #f38970 !important;
 }
 
-.navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
-    color: #fff;
-}
-
 /* end nav */
 
 
 /*start banner*/
 main {
     margin-bottom: 150px;
-    background: white;
+    background: #fff;
 }
 
 .site-main .site-banner {
-    background: #D3E3FC;
-    color: #f38970;
+    color: #f2f9f7;
+    background: var(--gradient-color);
 }
 
 /*profile picture*/
 .site-main .site-banner .profile-image>img {
-    /* margin-top: 30%; */
     width: 175px;
+    position: relative;
+    right: 30px;
+}
+
+.greetings {
+    font-family: 'back_issues_bbitalic';
+    font-size: 20px;
+    width: 100px;
+    color: #f2f9f7;
+    text-align: justify;
+    position: relative;
+    top: 4.5em;
+    right: 16px;
 }
 
 .site-main .site-banner p {
-    font-weight: 500;
+    font-family: 'back_issues_bbregular';
+    font-size: 18px;
+    width: 190px;
+    line-height: 1.1;
+    position: absolute;
+    left: -28px;
+    bottom: 15px;
 }
 
-.hola {
-    font-family: var(--bad_script);
-    font-size: 30px;
-    transform: rotate(-10deg);
-    text-align: justify;
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 250px; 
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 80px;
+    left: 50%;
+    margin-left: 0px;
+}
+
+/* Popup arrow */
+/* .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    margin-left: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #C38D9E transparent transparent transparent;
+} */
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    animation: bounceIn 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate3d(0, 0, 0);
+}
+
+/* Add animation (fade in the popup) */
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3) translate3d(0, 0, 0);
+    }
+
+    10% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    70% {
+        transform: translate3d(-3px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(3px, 0, 0);
+    }
+
+    50% {
+        opacity: 0.9;
+        transform: scale(1.1) translate3d(0, 0, 0);
+    }
+
+    80% {
+        opacity: 1;
+        transform: scale(0.89) translate3d(2px, 0, 0);
+    }
+
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translate3d(0, 0, 0);
+    }
 }
 
 /*end banner*/
 
 /* Start about */
 .site-main .about {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 /*Let Me Introduce Myself*/
 .site-main .about .title h2>span {
     display: block;
-    font: italic bold 36px/60px georgia;
+    font: italic bold 34px/60px georgia;
+    letter-spacing: -3px;
     text-transform: lowercase;
-    color: #7ec9b1
+    color: #26BEDD;
+}
+
+.site-main .about p {
+    font-family: 'roboto';
+    font-size: 16px;
+    color: #0d0c0a;
+
 }
 
 .site-main .about p>a {
-    color: #7ec9b1;
+    color: #009D9E;
     font-weight: bold;
 }
 
@@ -131,11 +236,10 @@ main {
 }
 
 .site-main .about p>span {
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: #7ec9b1;
+    text-decoration: underline wavy;
+    text-decoration-color: #009D9E;
     font-weight: bold;
-    color: #f38970;
+    color: #F57161;
     font-style: italic;
 }
 
@@ -150,59 +254,73 @@ main {
 
 /* Start skills */
 .site-main .skills {
-    background: #FFCCBC;
-    padding: 2rem;
+    background: #8D9DC3;   
 }
 
 .site-main .skills .title h2>span {
     display: block;
-    font: italic bold 36px/60px georgia;
+    font: italic bold 34px/60px georgia;
+    letter-spacing: -3px;
     text-transform: lowercase;
-    color: black;
+    color: #fadcdc;
+    ;
 }
 
-.site-main .skills .card {
-    border: none;
-}
+ .carousel {
+     height: 350px; 
+ }
 
-.site-main .skills img {
-    width: 70px;
-    margin: auto;
-}
+/* 
+ .carousel-item,
+ .carousel-inner,
+ .carousel-inner img {
+     height: 60%;
+     width: auto;
+ }*/
 
+ .carousel-item {
+     text-align: center;
+ } 
+
+ .carousel-item img{
+     margin: 0 auto;  
+ }
+
+ .carousel-control-prev,
+ .carousel-control-next {
+     bottom: 20%;
+ }
+ 
 /* End skills */
 
 /* Start Project Area */
 
- 
-
 .site-main .project-area {
-    padding: 2rem 0 3rem 0;
-    border: thin solid black;
-
+    padding: 2rem 0 3rem 0; 
 }
 
 .site-main .project-area .title h2>span {
     display: block;
-    font: italic bold 36px/60px georgia;
+    font: italic bold 34px/60px georgia;
+    letter-spacing: -3px;
     text-transform: lowercase;
-    color: #f1b037;
+    color: #00b0b2;
 }
 
 .site-main .project-area .btn-group {
-    padding: 3px;
-
+    padding: 3px; 
 }
 
 .site-main .project-area button {
-    font: normal 500 18px/30px var(--roboto);
+    font: normal 600 18px/30px 'roboto';
+    text-transform: uppercase;
     padding: 0.3rem 2rem;
     border: none;
     border-radius: 3px;
-    background: #7ec9b1;
-    color: rgb(243, 241, 241);
+    background: #E8A87C;
+    color: #fff;
     width: 100%;
-    margin: 2px 0;
+    margin: 3px 0;
 }
 
 .site-main .project-area button:hover {
@@ -213,11 +331,12 @@ main {
 
 .site-main .project-area .grid .element-item {
     border-radius: 3px;
-    background: #f38970;
+    background: #f9f9f9;
+    ;
+    ;
     padding: 0 0 10px 0;
 
 }
-
 
 .site-main .project-area .grid .element-item .project-links {
     text-align: center;
@@ -226,8 +345,9 @@ main {
 
 .site-main .project-area .grid .element-item .project-links a {
     border-radius: 0.2rem;
-    background: #99d4c1;
-    color: black;
+    font-weight: bold;
+    background: #3f3f3f;
+    color: white;
     padding: 0.5rem 1rem;
 }
 
@@ -238,8 +358,7 @@ main {
 
 
 .site-main .project-area .grid .our-project>.title h4 {
-    font: normal 500 20px/25px var(--roboto);
-    border: thin solid white;
+    font: normal 500 18px/25px var(--roboto); 
 }
 
 .site-main .project-area .grid .our-project .img video {
@@ -259,11 +378,11 @@ main {
 /* Start Contact Area */
 .contact-area {
     padding: 2rem;
-    background: #9fd6da;
+    background: #C38D9E;
 }
 
 .contact-us {
-    font: bold 36px var(--roboto);
+    font: bold 32px var(--roboto);
     transition: all .5s ease;
 }
 

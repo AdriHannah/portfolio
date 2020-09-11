@@ -20,17 +20,35 @@ body {
     /*change color*/
     --border-color: #201f1f17;
     /*change color*/
-    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --gradient-color: linear-gradient(90deg, rgba(130, 201, 190, 1) 15%, rgba(129, 200, 188, 1) 33%, rgba(128, 198, 184, 1) 50%, rgba(127, 198, 181, 1) 65%, rgba(125, 196, 177, 1) 80%);
     --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
     --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
 
-    /* Font Family Variables */
-    --roboto: 'Roboto', cursive;
-    --bad_script: 'Bad Script', cursive;
-    --georgia: 'Georgia';
+    /* Font Family Variables */ 
+    --roboto: 'Roboto', cursive;  
 }
 
-/*
+/*  
+#E27D60
+#86CDCB
+#E8A87C
+#C38D9E
+#41B3A3 
+ 
+#26BEDD
+#FAC2C1 
+#9BE8DA RANDOM COLOR
+#F57161 COLOR DRESS??
+#FDD0AF TITLE COLOR??
+#F48288 BUTTON // ICONS 
+#009D9E TEXT COLOR
+ 
+#7EC3AF #7DC4B1 #7FC4B0 #7FC6B5 #80C6B8 #81C8BC #82C9BE
+
+
+ 
+ 
+
 #f38970
 #99d4c1
 #f3be5e
