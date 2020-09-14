@@ -10,7 +10,7 @@
     <!--- Google Font -->
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lobster&display=swap"
         rel="stylesheet">
 
     <!-- Bootstrap CSS -->
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="icons/foundation-icons.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles2.css">
 
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
@@ -38,10 +38,11 @@
 <body>
 
     <!-- ============= Header ============= -->
-    <header class="header" id="home">
+    <a class="anchor" id="home"></a>
+    <header class="header">
         <div class="main">
-            <nav class="navbar navbar-light navbar-expand-lg fixed-top">
-                <div class="container">
+            <div class="container">
+                <nav class="navbar navbar-light navbar-expand-lg fixed-top">
                     <a class="navbar-brand" href="#home">adriana j<span class="i">i</span>menez</a>
                     <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
                         <span class="line"></span>
@@ -49,21 +50,21 @@
                         <span class="line" style="margin-bottom: 0;"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navcol-1">
-                        <ul class="nav navbar-nav mr-auto">
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#home">Home</a>
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#home">home</a>
                             </li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#about">Me</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#skills">Skills</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#projects">Projects</a>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#about">me</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#skills">skills</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#projects">projects</a>
                             </li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#contact">Contact</a>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#contact">contact</a>
                             </li>
-                            <li class="nav-item d-lg-flex d-xl-flex align-items-lg-center align-items-xl-center social-icons"
-                                role="presentation"></li>
+                            <!-- <li class="nav-item d-lg-flex d-xl-flex align-items-lg-center align-items-xl-center social-icons"
+                                role="presentation"></li> -->
                         </ul>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
     </header>
     <!-- ============= End Header ============= -->
@@ -75,7 +76,7 @@
             <div class="container">
                 <div class="row text-center">
                     <div class=" col-lg-6 col-md-12 mt-5 pt-1 d-flex profile-image">
-                        <div class="col-md-6 col-md-12 mt-3">
+                        <div class="col-md-6 mt-3">
                             <div class="greetings mt-5 text-center">
                                 Greetings!
                             </div>
@@ -86,7 +87,7 @@
                             </p>
                         </div>
                         <img id="adriLogo" src="images/adriDemo5.png" alt="a manga inspired portrait of Adriana"
-                            class="img-fluid">
+                            class="img-fluid" />
                     </div>
                 </div>
             </div>
@@ -94,11 +95,12 @@
         <!-- ============= End Banner ============= -->
 
         <!-- ============= About ============= -->
-        <section class="about" id="about">
+        <a class="anchor" id="about"></a>
+        <section class="about">
             <div class="container-fluid">
-                <div class="title">
+                <div class="title pt-4">
                     <h2>
-                        <span>me<span style="color: #20adca">.</span>
+                        <span>me</span>
                     </h2>
                 </div>
                 <p>
@@ -123,11 +125,12 @@
         <!-- ============= End About ============= -->
 
         <!-- ============= Skills Area ============= -->
-        <section class="skills" id="skills">
+        <a class="anchor" id="skills"></a>
+        <section class="skills">
             <div class="container-fluid">
-                <div class="title pt-3 pl-4">
+                <div class="title pt-4 ml-4">
                     <h2>
-                        <span>skills<span style="color:#f8cbcb">.</span>
+                        <span>skills</span>
                     </h2>
                 </div>
 
@@ -151,7 +154,7 @@
                             <img src="images/javascript-icon.svg" class="d-block w-50 mt-5 pt-4" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/bootstrap_icon.png" class="d-block w-50 mt-5 pt-4" alt="...">
+                            <img src="images/bootstrap.svg" class="d-block w-50 mt-5 pt-4" alt="...">
                         </div>
                         <div class="carousel-item">
                             <img src="images/sass_icon.svg" class="d-block w-50 mt-5 pt-4" alt="...">
@@ -174,50 +177,51 @@
         <!-- ============= End Skills Area ============= -->
 
         <!-- ============= Project Area ============= -->
-        <section class="project-area" id="projects">
-            <div class="container">
-                <div class="title">
+        <a class="anchor" id="projects"></a>
+        <section class="project-area">
+            <div class="container-fluid">
+                <div class="title pt-4 ml-4">
                     <h2>
-                        <span>projects<span style="color: #009d9e">.</span>
+                        <span>projects</span>
                     </h2>
                 </div>
                 <!--btn-group: used for styling-->
                 <!--button-group: used for isotope js-->
-                <div class="row btn-group button-group">
+                <div class="row button-group p-3 pb-5">
                     <button type="button" class="active" id="btn1" data-filter="*">All</button>
                     <button type="button" data-filter=".fetch">Fetch API</button>
                     <button type="button" data-filter=".javascript">Javascript</button>
                     <button type="button" data-filter=".sass">Sass</button>
                 </div>
-                <div class="row grid">
-                    <div class="col-lg-3 col-md-4 col-sm-12 element-item m-1 mt-2 mb-2 shadow sass">
+                <div class="row grid p-3">
+                    <div class="col-lg-3 col-md-4 col-sm-12 element-item shadow sass">
                         <div class="our-project">
                             <div class="img first">
                                 <video autoplay loop muted playsinline>
                                     <source src="videos/project_4.mp4" type="video/mp4">
                                 </video>
                             </div>
-                            <div class="title p-3">
+                            <div class="title p-4 pb-5">
                                 <h4 class="text-center">Web Style Guide</h4>
                                 <p>A mock-up style guide that uses Sass which makes the design of webpages using CSS
                                     run smoother and quicker.</p>
                                 <p class="font-weight-bold text-center text-muted text-uppercase">css &#183; html
                                     &#183; sass</p>
                             </div>
-                            <div class="project-links p-2">
+                            <div class="project-links p-2 absoluteBottom">
                                 <a href="">Github</a>
                                 <a href="">Demo</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12 element-item m-1 mt-2 mb-2 shadow javascript fetch">
+                    <div class="col-lg-3 col-md-4 col-sm-12 element-item shadow javascript fetch">
                         <div class="our-project">
                             <div class="img second">
                                 <video autoplay loop muted playsinline>
                                     <source src="videos/project_8.mp4" type="video/mp4">
                                 </video>
                             </div>
-                            <div class="title p-4">
+                            <div class="title p-4 pb-5">
                                 <h4 class="text-center">Employee Directory</h4>
                                 <p>Created an employee directory that interacts with a third-party API using Fetch
                                     requests to show information on employees.
@@ -225,87 +229,87 @@
                                 <p class="font-weight-bold text-center text-muted text-uppercase">html &#183; css
                                     &#183; fetch api &#183; css grid &#183; javascript</p>
                             </div>
-                            <div class="project-links p-2">
+                            <div class="project-links p-2 absoluteBottom">
                                 <a href="">Github</a>
                                 <a href="">Demo</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12 element-item m-1 mt-2 mb-2 shadow *">
+                    <div class="col-lg-3 col-md-4 col-sm-12 element-item shadow *">
                         <div class="our-project">
                             <div class="img">
                                 <video autoplay loop muted playsinline>
                                     <source src="videos/project_3.mp4" type="video/mp4">
                                 </video>
                             </div>
-                            <div class="title p-3">
+                            <div class="title p-4 pb-5">
                                 <h4 class="text-center">Registration Form</h4>
                                 <p>Developed an online responsive registration form using a variety of HTML form
                                     elements.</p>
                                 <p class="font-weight-bold text-center text-muted text-uppercase">html &#183; css
                                     form</p>
                             </div>
-                            <div class="project-links p-2">
+                            <div class="project-links p-2 absoluteBottom">
                                 <a href="">Github</a>
                                 <a href="">Demo</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12 element-item m-1 mt-2 mb-2 shadow javascript">
+                    <div class="col-lg-3 col-md-4 col-sm-12 element-item shadow javascript">
                         <div class="our-project">
                             <div class="img">
                                 <video autoplay loop muted playsinline>
                                     <source src="videos/project_5.mp4" type="video/mp4">
                                 </video>
                             </div>
-                            <div class="title p-4">
+                            <div class="title p-4 pb-5">
                                 <h4 class="text-center">Photo Gallery</h4>
                                 <p>The use of JavaScript and a jQuery plug-in brought this immersive gallery to
                                     life. Designed to filter through searchable images.</p>
                                 <p class="font-weight-bold text-center text-muted text-uppercase">html &#183; css
                                     &#183; jquery &#183; javascript</p>
                             </div>
-                            <div class="project-links p-2">
+                            <div class="project-links p-2 absoluteBottom">
                                 <a href="">Github</a>
                                 <a href="">Demo</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12 element-item m-1 mt-2 mb-2 shadow javascript">
+                    <div class="col-lg-3 col-md-4 col-sm-12 element-item shadow javascript">
                         <div class="our-project">
                             <div class="img">
                                 <video autoplay loop muted playsinline>
                                     <source src="videos/project_6.mp4" type="video/mp4">
                                 </video>
                             </div>
-                            <div class="title p-4">
+                            <div class="title p-4 pb-5">
                                 <h4 class="text-center">Game Show App</h4>
                                 <p>A game app that uses JavaScript to create an interactive game, by generating
                                     random phrases for a guessing game.</p>
                                 <p class="font-weight-bold text-center text-muted text-uppercase">html &#183; css
                                     &#183; javascript</p>
                             </div>
-                            <div class="project-links p-2">
+                            <div class="project-links p-2 absoluteBottom">
                                 <a href="">Github</a>
                                 <a href="">Demo</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12 element-item m-1 mt-2 mb-2 shadow javascript">
+                    <div class="col-lg-3 col-md-4 col-sm-12 element-item shadow javascript">
                         <div class="our-project">
                             <div class="img">
                                 <video autoplay loop muted playsinline>
                                     <source src="videos/project_7.mp4" type="video/mp4">
                                 </video>
                             </div>
-                            <div class="title p-4">
+                            <div class="title p-4 pb-5">
                                 <h4 class="text-center">WebApp Dashboard</h4>
                                 <p>Built a dashboard using web application, with SVG icons and charts and graphs
                                     from an open source JavaScript library.</p>
                                 <p class="font-weight-bold text-center text-muted text-uppercase">html &#183; css
                                     &#183; svg &#183; javascript</p>
                             </div>
-                            <div class="project-links p-2">
+                            <div class="project-links p-2 absoluteBottom">
                                 <a href="">Github</a>
                                 <a href="">Demo</a>
                             </div>
@@ -324,8 +328,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-4 col-lg col-6 p-3 text-center">
-                        <h4><a href="mailto:adriana.f.jimenez@gmail.com" class="contact-us">contact me<span
-                                    style="color: white">.</span></a></h4>
+                        <h4><a href="mailto:adriana.f.jimenez@gmail.com" class="contact-us">contact me</h4>
                     </div>
                 </div>
             </div>

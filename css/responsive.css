@@ -1,40 +1,253 @@
 /* if the viewport is equal to 340px or less than that */
-@media only screen and (max-width: 340px) {
+@media only screen and (min-width: 320px) {
 
-    .header .main .navbar,
+    /* .header .main .navbar,
     .header .main .navbar .navbar-brand {
         padding: 2%;
         margin: 0%;
-    }
-
-  
-    .site-main>.services-area .services {
-        width: 13rem;
-    }
-
-} 
- 
-@media only screen and (max-width: 792px) {
-    /* .site-main .about .about-title h2>span {
-        font-size: 28px;
-        letter-spacing: 10px;
     } */
-  
-    /* .site-main .project-area .button-group button {
-        font: normal 500 18px/40px var(--roboto);
-    } */
-
-    .site-main .about .about-title p {
-        padding: 0%;
-    } 
 }
 
-.navbar .navbar-toggler {
-    z-index: 1000
+@media only screen and (min-width: 481px) and (max-width:768px) {
+
+    main {
+        margin-top: 50px;
+        background: #fff;
+    }
+
+    .header .main .navbar .navbar-brand {
+        font: 38px 'lobster', cursive;
+    }
+
+    .greetings {
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        top: 4rem;
+        left: 18px;
+    }
+
+    .site-main .site-banner p {
+        font-size: 20px;
+        font-weight: 500;
+        left: -2px;
+        bottom: 38px;
+    }
+
+    .site-main .about {
+        padding: 2rem;
+    }
+
+    .site-main .about p {
+        font-size: 17px;
+    }
+
+    .site-main .project-area .grid .element-item {
+        min-width: 290px;
+    }
+
+    .site-main .project-area button {
+        font-size: 22px;
+    }
+
+    .site-main .project-area .grid .our-project>.title h4 {
+        font-size: 20px;
+    }
+
+    .site-main .our-project p {
+        font-size: 16px;
+    }
+
+    .site-main .project-area .grid .element-item .project-links a {
+        font-size: 15px;
+        padding: .5rem 2rem;
+    }
 }
+
+
+@media (min-width: 768px) {
+
+    main {
+        margin-top: 50px;
+        background: #fff;
+    }
+
+    .header .main .navbar .navbar-brand {
+        font: 38px 'lobster', cursive;
+    }
+
+    .site-main .site-banner .profile-image>img {
+        width: 230px;
+        left: 5rem;
+    }
+
+    .greetings {
+        font-weight: 500;
+        font-size: 32px;
+        top: 1.5em;
+        left: 14rem;
+    }
+
+    .site-main .site-banner p {
+        font-weight: 500;
+        font-size: 26px;
+        width: 240px;
+        left: 12rem;
+        bottom: 7rem;
+    }
+
+    .site-main .project-area .grid {
+        border: thin solid orange;
+        display: flex;
+        justify-content: center;
+    }
+
+    .site-main .project-area .grid .element-item {
+        margin: 10px;
+        width: 48%;
+    }
+
+    .site-main .project-area .title>h2 {
+        margin-left: -25px;
+        border: thin solid red;
+    }
+
+
+    .site-main .project-area .grid .our-project>.title h4 {
+        font: normal bold 20px/25px 'lato', sans-serif;
+    }
+
+    .site-main .our-project p {
+        font-size: 16px;
+    }
+
+    .site-main .container {
+        border: thin solid blue;
+    }
+
+    .site-main .project-area button {
+        font: normal 300 21.3px 'lato', sans-serif;
+        width: 154px;
+        height: 60px;
+        margin: 0 5px;
+    }
+
+    .site-main .project-area .button-group {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 0;
+        width: 690px;
+        border: thin solid green;
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    main {
+        margin-top: 90px;
+        background: #fff;
+    }
+
+    .navbar {
+        border: thin solid yellow;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar .navbar-brand {
+        border: thin solid red;
+    }
+
+    .navbar .navbar-collapse{
+        border: thin solid blue;
+        flex-grow: 0;
+    }
+
+    .navbar .navbar-collapse ul{
+        border: thin solid red;
+    }
+    /* .header .main .container {
+        border: thin solid blue;
+        padding: 0;
+    }
+
+    .header .main .container .navbar-collapse{
+        border: thin solid red;
+    }
+
+    .header .main .container .nav{
+        border: thin solid orange;
+    }
+
+    .header .main .container .navbar-collapse ul {
+        border: thin solid yellow;
+    }
+
+    .header .main .container .navbar-collapse ul li{
+        border: thin dashed red;
+    }
+
+    .header .main .navbar .navbar-brand {
+        font: italic 600 32px/10px;
+        right: 70px;
+        color: #f2f9f7;
+        border: thick solid white;
+    }
+
+
+    .header .main .nav-item .nav-link {
+        font: normal italic 20px/2px 'lato', sans-serif;
+        text-transform: lowercase;
+        padding: 1.7rem;
+        margin-top: 30px;
+        letter-spacing: 1px;
+        color: #f2f9f7;
+    } */
+
+
+    .site-main .site-banner {
+        margin-top: 50px;
+    }
+
+    .site-main .site-banner .profile-image>img {
+        width: 250px;
+        left: 20rem;
+    }
+
+    .greetings {
+        font: normal 300 38px;
+        top: 1.5em;
+        left: 15rem;
+    }
+
+    .site-main .site-banner p {
+        font-size: 27px;
+        left: 12.5rem;
+        bottom: 9rem;
+    }
+
+    .site-main .project-area button {
+        font: normal 300 24px 'lato', sans-serif;
+        width: 200px;
+        height: 60px;
+        margin: 0 5px;
+    }
+
+    .site-main .project-area .button-group {
+        width: 880px;
+    }
+}
+
+
 
 @media (max-width: 991.98px) {
     .navbar .navbar-collapse {
+        font: normal 24px/2px 'lato', sans-serif;
+        text-transform: lowercase;
+        letter-spacing: 1px;
+        color: #f2f9f7;
         background: rgba(0, 0, 0, .9);
         opacity: 0;
         position: fixed;
@@ -48,7 +261,7 @@
         align-content: center;
         text-align: center !important;
         overflow-y: scroll;
-        overflow-x: hidden; 
+        overflow-x: hidden;
     }
 
     .navbar .navbar-collapse.collapse {
@@ -75,26 +288,18 @@
     .navbar .navbar-collapse .navbar-nav {
         margin-right: initial !important;
         margin-top: auto;
-        margin-bottom: auto; 
+        margin-bottom: auto;
     }
 }
 
-@media (max-width: 991.98px) {
-    .navbar-nav {
-        margin-left: initial !important;
-    }
-}
 
- 
 /* if the viewport is equal to 1910px or less than that */
- @media only screen and (max-width: 1910px) {
-    .header .main .navbar {
+@media only screen and (max-width: 1910px) {
+    /* .header .main .navbar {
         padding: 1rem;
-    }
+    } */
 
-    .container {
+    /* .container {
         max-width: 90%;
-    }
-
-
-}  
+    } */
+}

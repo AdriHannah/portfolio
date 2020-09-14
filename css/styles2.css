@@ -9,21 +9,23 @@ a.anchor {
 }
 
 /* start navigation */
-.header .main .navbar .navbar-brand {
-    padding: 0 2rem 0 5rem;
-    max-width: 135px;
-    font: 35px/10px 'lobster', cursive;
-    color: #f2f9f7;
-    letter-spacing: 1.5px;
-    position: relative;
-    right: 15px;
+.navbar{
+    padding: 0;
+    margin: 0;
+    background: var(--gradient-color);
 }
 
-.header .main .navbar .navbar-brand .i {
+.navbar .navbar-brand{
+    font: 35px 'lobster', cursive;
+    letter-spacing: 1.5px;
+    color: #f2f9f7;
+    margin: 0 0 0 15px;
+}
+.navbar .navbar-brand .i {
     color: #C38D9E;
 }
 
-.header .main .navbar .navbar-brand .i::before {
+.navbar .navbar-brand .i::before {
     content: "ı";
     position: absolute;
     color: #f2f9f7;
@@ -32,7 +34,7 @@ a.anchor {
 .navbar-toggler {
     width: 47px;
     height: 34px;
-    margin: 5px -20px 0 0;
+    margin: 5px 5px 0 0;
     border: none;
 }
 
@@ -48,10 +50,6 @@ a.anchor {
     z-index: 1000
 }
 
-.header .main .navbar {
-    padding: 1rem 20rem;
-    background: var(--gradient-color);
-}
 
 .header .main .nav-item .nav-link {
     font: normal 24px/2px 'lato', sans-serif;

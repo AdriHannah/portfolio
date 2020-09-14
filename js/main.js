@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
 
     let $btns = $(".project-area .button-group button");
@@ -14,21 +13,34 @@ $(document).ready(function () {
         return false
     });
 
-    // $(function () {
-    //     $('[data-toggle="tooltip"]').tooltip();
-    // });
 
+    // close navbar when you click on it //
+    $('.navbar-nav>li>a').on('click', function () {
+        $('.navbar-collapse').collapse('hide');
+    });
+
+
+
+    // animation for picture of Krivaya, the cat //
     const seeKrivaya = document.querySelector("#seeKrivaya");
-    seeKrivaya.addEventListener('pointerenter', () => { 
+    seeKrivaya.addEventListener('pointerenter', () => {
         var showKrivaya = document.getElementById('krivaya');
         showKrivaya.classList.add("show");
         console.log("test");
     });
 
-    $(document).on('click','body *', () => {
+    $(document).on('click', 'body *', () => {
         var showKrivaya = document.getElementById('krivaya');
         showKrivaya.classList.remove("show");
     });
+});
+
+
+
+    // $(function () {
+    //     $('[data-toggle="tooltip"]').tooltip();
+    // });
+
 
 
 
@@ -38,11 +50,10 @@ $(document).ready(function () {
     // //Defining afterAnimationFunction
     // animationHelper.beforeAnimationFunctionName = function (e, animationContext) {
     //     if (true) {
-            
+
     //         var seeKrivaya = document.getElementById('krivaya');
     //         seeKrivaya.classList.toggle("show");
 
     //         animationContext.run();
     //     }
     // }
-});
