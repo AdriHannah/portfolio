@@ -40,7 +40,6 @@ $(document).ready(function () {
     seeKrivaya.addEventListener('pointerenter', () => {
         var showKrivaya = document.getElementById('krivaya');
         showKrivaya.classList.add("show");
-        console.log("test");
     });
 
     $(document).on('click', 'body *', () => {
