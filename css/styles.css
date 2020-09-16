@@ -61,15 +61,13 @@
 .header .main .navbar-nav .active a {
     background: var(--header-color);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }
 
 .header .main .navbar-nav a:hover {
     background: #F57161;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    -webkit-text-fill-color: transparent; 
     transition: .3s;
 }
 
@@ -167,6 +165,10 @@ main {
     color: #7ec9b1;
     text-decoration-color: #99d4c1;
     transition: 0.4s;
+}
+
+#krivaya img {
+    width: 250px;
 }
 
 /* end about me */
