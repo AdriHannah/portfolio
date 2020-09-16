@@ -10,10 +10,12 @@ gsap.to("#desktop-img", {
     ease: "back.out(1.7)",
     x: -500
 });
+ 
 
 // button isotope JS //
 $(document).ready(function () {
 
+   
     let $btns = $(".project-area .button-group button");
 
     $btns.click(function (e) {
@@ -22,12 +24,14 @@ $(document).ready(function () {
         e.target.classList.add("active");
         let selector = $(e.target).attr("data-filter");
         $(".project-area .grid").isotope({
-            filter: selector
+            layoutMode: 'fitRows',
+            filter: selector,
         });
         return false
+
     });
 
-
+   
     // close navbar when you click on it //
     $('.navbar-nav>li>a').on('click', function () {
         $('.navbar-collapse').collapse('hide');
@@ -46,4 +50,6 @@ $(document).ready(function () {
         var showKrivaya = document.getElementById('krivaya');
         showKrivaya.classList.remove("show");
     });
+
+
 });
