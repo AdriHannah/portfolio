@@ -1,3 +1,17 @@
+// animation for banner image //
+gsap.to("#mobile-img", {
+    duration: 2,
+    ease: "back.out(1.7)",
+    x: -500
+});
+
+gsap.to("#desktop-img", {
+    duration: 2,
+    ease: "back.out(1.7)",
+    x: -500
+});
+
+// button isotope JS //
 $(document).ready(function () {
 
     let $btns = $(".project-area .button-group button");
@@ -34,26 +48,3 @@ $(document).ready(function () {
         showKrivaya.classList.remove("show");
     });
 });
-
-
-
-    // $(function () {
-    //     $('[data-toggle="tooltip"]').tooltip();
-    // });
-
-
-
-
-    // //Obtaining the default helper
-    // var animationHelper = AniJS.getHelper();
-
-    // //Defining afterAnimationFunction
-    // animationHelper.beforeAnimationFunctionName = function (e, animationContext) {
-    //     if (true) {
-
-    //         var seeKrivaya = document.getElementById('krivaya');
-    //         seeKrivaya.classList.toggle("show");
-
-    //         animationContext.run();
-    //     }
-    // }

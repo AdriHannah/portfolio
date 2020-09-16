@@ -1,18 +1,7 @@
-/* if the viewport is equal to 340px or less than that */
-@media only screen and (min-width: 320px) {
-
-    /* .header .main .navbar,
-    .header .main .navbar .navbar-brand {
-        padding: 2%;
-        margin: 0%;
-    } */
-}
-
 @media only screen and (min-width: 481px) and (max-width:768px) {
 
     main {
-        margin-top: 50px;
-        background: #fff;
+        margin-top: 50px; 
     }
 
     .header .main .navbar .navbar-brand {
@@ -42,10 +31,6 @@
         font-size: 17px;
     }
 
-    .site-main .project-area .grid .element-item {
-        min-width: 290px;
-    }
-
     .site-main .project-area button {
         font-size: 22px;
     }
@@ -57,19 +42,13 @@
     .site-main .our-project p {
         font-size: 16px;
     }
-
-    .site-main .project-area .grid .element-item .project-links a {
-        font-size: 15px;
-        padding: .5rem 2rem;
-    }
 }
 
 
 @media (min-width: 768px) {
 
     main {
-        margin-top: 50px;
-        background: #fff;
+        margin-top: 50px; 
     }
 
     .header .main .navbar .navbar-brand {
@@ -84,34 +63,34 @@
     .greetings {
         font-weight: 500;
         font-size: 32px;
-        top: 1.5em;
-        left: 14rem;
     }
 
     .site-main .site-banner p {
         font-weight: 500;
         font-size: 26px;
-        width: 240px;
-        left: 12rem;
-        bottom: 7rem;
     }
 
     .site-main .project-area .grid {
-        border: thin solid orange;
         display: flex;
         justify-content: center;
     }
 
     .site-main .project-area .grid .element-item {
         margin: 10px;
-        width: 48%;
+        width: 47%;
+    }
+
+    .site-main .project-area .grid .element-item .our-project {
+        height: 100%;
+    }
+
+    .site-main .project-area .grid .element-item .our-project .absoluteBottom {
+        bottom: 0;
     }
 
     .site-main .project-area .title>h2 {
-        margin-left: -25px;
-        border: thin solid red;
+        margin-left: -5px;
     }
-
 
     .site-main .project-area .grid .our-project>.title h4 {
         font: normal bold 20px/25px 'lato', sans-serif;
@@ -119,10 +98,6 @@
 
     .site-main .our-project p {
         font-size: 16px;
-    }
-
-    .site-main .container {
-        border: thin solid blue;
     }
 
     .site-main .project-area button {
@@ -138,7 +113,11 @@
         margin: auto;
         padding: 0;
         width: 690px;
-        border: thin solid green;
+    }
+
+    footer.footer-area .social-group a>i {
+        font-size: 40px;
+        padding: 2rem 1rem;
     }
 }
 
@@ -146,87 +125,74 @@
 @media (min-width: 992px) {
 
     main {
-        margin-top: 90px;
-        background: #fff;
+        margin-top: 80px; 
+    }
+
+    .header .main .navbar .navbar-brand {
+        font: 42px 'lobster', cursive;
+    }
+
+    .site-main .site-banner .wrapper>img {
+        width: 300px;
+        position: relative;
+        right: 30px;
+    }
+
+    .site-main .site-banner .wrapper .desktop-img {
+        display: block;
+        right: -500px;
+    }
+
+    .site-main .site-banner .wrapper .mobile-img {
+        display: none;
     }
 
     .navbar {
-        border: thin solid yellow;
         display: flex;
         justify-content: space-between;
     }
 
-    .navbar .navbar-brand {
-        border: thin solid red;
-    }
-
-    .navbar .navbar-collapse{
-        border: thin solid blue;
+    .navbar .navbar-collapse {
         flex-grow: 0;
     }
 
-    .navbar .navbar-collapse ul{
-        border: thin solid red;
-    }
-    /* .header .main .container {
-        border: thin solid blue;
-        padding: 0;
-    }
-
-    .header .main .container .navbar-collapse{
-        border: thin solid red;
-    }
-
-    .header .main .container .nav{
-        border: thin solid orange;
-    }
-
-    .header .main .container .navbar-collapse ul {
-        border: thin solid yellow;
-    }
-
-    .header .main .container .navbar-collapse ul li{
-        border: thin dashed red;
-    }
-
-    .header .main .navbar .navbar-brand {
-        font: italic 600 32px/10px;
-        right: 70px;
-        color: #f2f9f7;
-        border: thick solid white;
-    }
-
-
     .header .main .nav-item .nav-link {
-        font: normal italic 20px/2px 'lato', sans-serif;
-        text-transform: lowercase;
-        padding: 1.7rem;
-        margin-top: 30px;
-        letter-spacing: 1px;
-        color: #f2f9f7;
-    } */
-
+        font: normal 20px/2px 'lato', sans-serif;
+        margin-bottom: 20px;
+    }
 
     .site-main .site-banner {
         margin-top: 50px;
     }
 
     .site-main .site-banner .profile-image>img {
-        width: 250px;
+        width: 360px;
         left: 20rem;
-    }
+    } 
 
     .greetings {
-        font: normal 300 38px;
-        top: 1.5em;
+        font-size: 30px;
+        top: 2em;
         left: 15rem;
     }
 
     .site-main .site-banner p {
-        font-size: 27px;
-        left: 12.5rem;
-        bottom: 9rem;
+        font-size: 26px;
+        left: 12.4rem;
+        bottom: 12rem;
     }
+
+    .site-main .about p {
+        font-size: 20px;
+    }
+
+    .site-main .about .title h2>span,
+    .site-main .skills .title h2>span,
+    .site-main .project-area .title h2>span,
+    .contact-us {
+        font: 45px/50px 'lobster', cursive;
+    }
+
 
     .site-main .project-area button {
         font: normal 300 24px 'lato', sans-serif;
@@ -238,9 +204,12 @@
     .site-main .project-area .button-group {
         width: 880px;
     }
+
+
+    .site-main .project-area .grid .element-item {
+        width: 31%;
+    } 
 }
-
-
 
 @media (max-width: 991.98px) {
     .navbar .navbar-collapse {
@@ -260,10 +229,11 @@
         flex-direction: column;
         align-content: center;
         text-align: center !important;
-        overflow-y: scroll;
+        overflow-y: hidden;
         overflow-x: hidden;
     }
 
+ 
     .navbar .navbar-collapse.collapse {
         display: flex;
         opacity: 0;
@@ -282,24 +252,13 @@
 
     .navbar .navbar-collapse.collapse.show {
         opacity: 1;
-        pointer-events: auto;
+        pointer-events: auto; 
     }
 
     .navbar .navbar-collapse .navbar-nav {
         margin-right: initial !important;
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: auto; 
     }
 }
-
-
-/* if the viewport is equal to 1910px or less than that */
-@media only screen and (max-width: 1910px) {
-    /* .header .main .navbar {
-        padding: 1rem;
-    } */
-
-    /* .container {
-        max-width: 90%;
-    } */
-}
+ 
