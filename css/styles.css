@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 /* start navigation */
 .navbar {
     padding: 0;
