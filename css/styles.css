@@ -253,7 +253,7 @@ main {
     border-radius: 3px;
     padding: 0 0 10px 0;
     margin: 10px 0;
-    max-height: 450px;
+    height: 450px;
 }
 
 .site-main .our-project {

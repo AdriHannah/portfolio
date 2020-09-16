@@ -22,6 +22,7 @@ $(document).ready(function () {
         e.target.classList.add("active");
         let selector = $(e.target).attr("data-filter");
         $(".project-area .grid").isotope({
+            layoutMode: 'fitRows',
             filter: selector
         });
         return false
