@@ -1,0 +1,40 @@
+html,
+body {
+    margin: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-size: 0.95rem;
+}
+
+/* CSS Variables */
+
+:root { 
+    --primary: #fef2ef;
+    --primary-color2: #854fee;
+    /*change color*/
+    --header-color: #f2f9f7;
+    --title-color: #f38970;
+    --text-color: #212121;
+    --main-background: #fff;
+    --me-color: #26BEDD;
+    --rosy-color: #c38d9e;
+    --treehouse-color: #5FCF80;
+    --treehouse-color2: #37b75c;
+    --krivaya-color: #F57161;
+    --skills-color: #fadcdc;
+    --skills-background: #8D9DC3;
+    --projects-color: #00b0b2;
+    --button-color: #f2f9f7;
+    --button-background: #E8A87C;
+    --button-hover: #e88d7c;
+    --projects-card: #fbf8f8;
+    --button-card: #3c3c3c;
+    --contact-hover: #D3E3FC;
+    --gradient-color: linear-gradient(90deg, rgba(130, 201, 190, 1) 15%, rgba(129, 200, 188, 1) 33%, rgba(128, 198, 184, 1) 50%, rgba(127, 198, 181, 1) 65%, rgba(125, 196, 177, 1) 80%);
+    --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+
+     /* Font Family Variables */
+     --roboto: 'Roboto', cursive;
+}

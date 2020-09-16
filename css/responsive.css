@@ -1,0 +1,264 @@
+@media only screen and (min-width: 481px) and (max-width:768px) {
+
+    main {
+        margin-top: 50px; 
+    }
+
+    .header .main .navbar .navbar-brand {
+        font: 38px 'lobster', cursive;
+    }
+
+    .greetings {
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        top: 4rem;
+        left: 18px;
+    }
+
+    .site-main .site-banner p {
+        font-size: 20px;
+        font-weight: 500;
+        left: -2px;
+        bottom: 38px;
+    }
+
+    .site-main .about {
+        padding: 2rem;
+    }
+
+    .site-main .about p {
+        font-size: 17px;
+    }
+
+    .site-main .project-area button {
+        font-size: 22px;
+    }
+
+    .site-main .project-area .grid .our-project>.title h4 {
+        font-size: 20px;
+    }
+
+    .site-main .our-project p {
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    main {
+        margin-top: 50px; 
+    }
+
+    .header .main .navbar .navbar-brand {
+        font: 38px 'lobster', cursive;
+    }
+
+    .site-main .site-banner .profile-image>img {
+        width: 230px;
+        left: 5rem;
+    }
+
+    .greetings {
+        font-weight: 500;
+        font-size: 32px;
+    }
+
+    .site-main .site-banner p {
+        font-weight: 500;
+        font-size: 26px;
+    }
+
+    .site-main .project-area .grid {
+        display: flex;
+        justify-content: center;
+    }
+
+    .site-main .project-area .grid .element-item {
+        margin: 10px;
+        width: 47%;
+    }
+
+    .site-main .project-area .grid .element-item .our-project {
+        height: 100%;
+    }
+
+    .site-main .project-area .grid .element-item .our-project .absoluteBottom {
+        bottom: 0;
+    }
+
+    .site-main .project-area .title>h2 {
+        margin-left: -5px;
+    }
+
+    .site-main .project-area .grid .our-project>.title h4 {
+        font: normal bold 20px/25px 'lato', sans-serif;
+    }
+
+    .site-main .our-project p {
+        font-size: 16px;
+    }
+
+    .site-main .project-area button {
+        font: normal 300 21.3px 'lato', sans-serif;
+        width: 154px;
+        height: 60px;
+        margin: 0 5px;
+    }
+
+    .site-main .project-area .button-group {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 0;
+        width: 690px;
+    }
+
+    footer.footer-area .social-group a>i {
+        font-size: 40px;
+        padding: 2rem 1rem;
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    main {
+        margin-top: 80px; 
+    }
+
+    .header .main .navbar .navbar-brand {
+        font: 42px 'lobster', cursive;
+    }
+
+    .site-main .site-banner .wrapper>img {
+        width: 300px;
+        position: relative;
+        right: 30px;
+    }
+
+    .site-main .site-banner .wrapper .desktop-img {
+        display: block;
+        right: -500px;
+    }
+
+    .site-main .site-banner .wrapper .mobile-img {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar .navbar-collapse {
+        flex-grow: 0;
+    }
+
+    .header .main .nav-item .nav-link {
+        font: normal 20px/2px 'lato', sans-serif;
+        margin-bottom: 20px;
+    }
+
+    .site-main .site-banner {
+        margin-top: 50px;
+    }
+
+    .site-main .site-banner .profile-image>img {
+        width: 360px;
+        left: 20rem;
+    } 
+
+    .greetings {
+        font-size: 30px;
+        top: 2em;
+        left: 15rem;
+    }
+
+    .site-main .site-banner p {
+        font-size: 26px;
+        left: 12.4rem;
+        bottom: 12rem;
+    }
+
+    .site-main .about p {
+        font-size: 20px;
+    }
+
+    .site-main .about .title h2>span,
+    .site-main .skills .title h2>span,
+    .site-main .project-area .title h2>span,
+    .contact-us {
+        font: 45px/50px 'lobster', cursive;
+    }
+
+
+    .site-main .project-area button {
+        font: normal 300 24px 'lato', sans-serif;
+        width: 200px;
+        height: 60px;
+        margin: 0 5px;
+    }
+
+    .site-main .project-area .button-group {
+        width: 880px;
+    }
+
+
+    .site-main .project-area .grid .element-item {
+        width: 31%;
+    } 
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-collapse {
+        font: normal 24px/2px 'lato', sans-serif;
+        text-transform: lowercase;
+        letter-spacing: 1px;
+        color: #f2f9f7;
+        background: rgba(0, 0, 0, .9);
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: opacity 0.35s ease;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center !important;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+ 
+    .navbar .navbar-collapse.collapse {
+        display: flex;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .navbar .navbar-collapse.collapsing[style*="height"] {
+        opacity: 1;
+        height: 100vh !important;
+    }
+
+    .navbar .navbar-collapse.collapsing {
+        opacity: 0;
+        height: 100vh;
+    }
+
+    .navbar .navbar-collapse.collapse.show {
+        opacity: 1;
+        pointer-events: auto; 
+    }
+
+    .navbar .navbar-collapse .navbar-nav {
+        margin-right: initial !important;
+        margin-top: auto;
+        margin-bottom: auto; 
+    }
+}
+ 
